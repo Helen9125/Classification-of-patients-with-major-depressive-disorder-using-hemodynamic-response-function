@@ -1,12 +1,12 @@
 # Classification-of-patients-with-major-depressive-disorder-using-hemodynamic-response-function
 
-##Introduction
+## Introduction
 Major depressive disorder (MDD) is a severe affective disease with high morbidity. Patients with MDD often have suicidal ideation (SI), and MDD is associated with approximately 31 % of lifelong suicide attempts (SA). Several research have revealed the correlation with brain region and the occurence of MDD. However previous studies mostly focused on a single subgroup (SA or SI), moreover, traditional statistics can only report group level-differences while individual level-differences are necessary to improve clinical application.
 
-##Aim
+## Aim
 We aim to investigate the potential of using HRF parameters to distinguish patients with major depressive disorder and different severities of suicidal intention.
 
-##Methods
+## Methods
 * Subjects
   - We will use retrospective data from previous clinical trials from Taipei Veterans General Hospital.
   - Total 302 subjects, consisting of MDD patients with different severity of suicidal intention and healthy controls.
@@ -29,15 +29,15 @@ We aim to investigate the potential of using HRF parameters to distinguish patie
   - Precision
   - Recall
   - F1 score
-##Results
+## Results
 Regression model outperformed other models with the accuracy of 71% and 0.86 on F1-score.
 ![image](https://github.com/user-attachments/assets/efcea442-d115-43ea-9324-ac56b5a8d914)
 
-##Conclusion
+## Conclusion
 * Several brain regions show to have higher correlation to MDD, these regions including frontal, limbic, occipital, parietal, sub-cortical.
 * Previous research has found the association between frontal area as well as cingulate cortex and major depressive disorder, which fits with our findings.
 
-##Limitations and Potential Solutions
+## Limitations and Potential Solutions
 * The classification performance in our study is not great, we speculate this might be due to that we have rather small sample size, especially for healthy controls.
 * We haven’t try data augmentation yet, which might help mitigate the influence of data imbalance issue.
 * The unit for HRF RH is percentage change in signal, while the unit for HRF TTP and FWHM is seconds, standardizing the parameters might help improve the performance of the model.
